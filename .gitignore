@@ -4,3 +4,4 @@ node_modules
 .vscode-test/
 *.vsix
 advent-code-opener.code-workspace
+.vscode/**
