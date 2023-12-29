@@ -2,7 +2,9 @@
   "name": "advent-code-opener",
   "displayName": "advent-code-opener",
   "description": "Opens files with a specific split window view",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "icon": "favicon.png",
+  "publisher": "TheOssumOpossum",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -18,7 +20,7 @@
       "title": "Advent of Code Opener",
       "properties": {
         "adventofcode.year": {
-          "type":"integer",
+          "type": "integer",
           "default": "2015",
           "description": "Default year to open advent of code files for."
         },
@@ -60,5 +62,9 @@
     "webpack-cli": "^5.1.4",
     "@vscode/test-cli": "^0.0.4",
     "@vscode/test-electron": "^2.3.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheOssumOpossum/aoc-opener.git"
   }
 }
