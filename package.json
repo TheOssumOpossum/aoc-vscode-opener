@@ -14,6 +14,21 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "Advent of Code Opener",
+      "properties": {
+        "adventofcode.year": {
+          "type":"integer",
+          "default": "2015",
+          "description": "Default year to open advent of code files for."
+        },
+        "adventofcode.day": {
+          "type": "integer",
+          "default": "1",
+          "description": "Default day to open advent of code files for."
+        }
+      }
+    },
     "commands": [
       {
         "command": "advent-code-opener.open",
