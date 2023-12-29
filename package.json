@@ -17,7 +17,7 @@
     "commands": [
       {
         "command": "advent-code-opener.open",
-        "title": "Hello World"
+        "title": "Advent Of Code: Open Files for Year/Day"
       }
     ]
   },
