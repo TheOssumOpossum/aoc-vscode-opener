@@ -67,9 +67,9 @@ export function activate(context: vscode.ExtensionContext) {
           return `Day must be at most 25.`;
         } else if (
           Number(year) === today.getFullYear() &&
-          day > today.getDate()
+          (day > (today.getDate() + 1))
         ) {
-          return `Day must be at most ${today.getDate()}.`;
+          return `Day must be at most ${today.getDate() + 1}.`;
         } else if (
           !fs.existsSync(`${currentPath.slice(1)}/${year}/day${padded_day}.py`)
         ) {
@@ -191,7 +191,6 @@ export function activate(context: vscode.ExtensionContext) {
       await vscode.commands.executeCommand(
         "workbench.action.focusFirstEditorGroup"
       );
-
 
       await vscode.workspace
         .getConfiguration()
